@@ -1,8 +1,11 @@
+import { Link } from "react-router-dom"
+import "./Card.css"
 
-function Card({ id, nombre, precio, simbolo, cambio24hrs }) {
+function Card({ id, nombre, precio, simbolo, cambio24hrs}) {
 
     return (
         <>
+            <Link to={`/criptomonedas/${id}`} >
             <div className="card">
                 <div className="card__bar">
                 </div>
@@ -18,8 +21,8 @@ function Card({ id, nombre, precio, simbolo, cambio24hrs }) {
                         <h5>Variacion 24hrs:</h5> {parseFloat(cambio24hrs).toFixed(2)} USD
                     </div>
                 </div>
-
             </div>
+                </Link>
         </>
     )
 }

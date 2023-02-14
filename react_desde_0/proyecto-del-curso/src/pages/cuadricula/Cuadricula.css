@@ -1,0 +1,7 @@
+
+
+body {
+    background: rgb(31,27,61);
+    background: linear-gradient(180deg, rgba(31,27,61,1) 0%, rgba(59,53,98,1) 100%);
+    font-family: 'trebuchet ms', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
